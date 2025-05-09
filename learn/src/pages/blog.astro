@@ -1,0 +1,18 @@
+---
+import Footer from '../components/Footer.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "My Astro Learning Blog";
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width" />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <BaseLayout pageTitle={pageTitle}>
+      <h2>Welcome to my blog!</h2>
+      <p>This is where I will post about my journey learning Astro.</p>
+    </BaseLayout>
+  </body>
+</html>
